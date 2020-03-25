@@ -6,24 +6,25 @@ Mybatis是目前主流的ORM框架，相比于hibernate的全自动，它是半�
 
 更多说明，可以参考 https://blog.csdn.net/joovor/article/details/105102992 这篇文章。
 
-
 Mybatis是目前主流的ORM框架，相比于hibernate的全自动，它是半自动化需要手写sql语句、接口、实体对象，后来推出的Generator自动生成代码，可以帮我们提高开发效率。
 
 #### 1.创建SpringBoot项目
 
-File→New→Project… 选择Spring Initializr，选择JDK版本，默认初始化URL![图片1](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZlFkcy5wbmc?x-oss-process=image/format,png)
+File→New→Project… 选择Spring Initializr，选择JDK版本，默认初始化URL
+
+![图片1](https://cdn.kefaming.com/2020/03/24/fQds.png)
 
 填写项目名称，java版本，其他描述信息
 
-![图片2](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZnNwQy5wbmc?x-oss-process=image/format,png)
+![图片2](https://cdn.kefaming.com/2020/03/24/fspC.png)
 
 选择web、mybatis、mysql依赖
 
-![图片3](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZmVGUC5wbmc?x-oss-process=image/format,png)
+![图片3](https://cdn.kefaming.com/2020/03/24/feFP.png)
 
 选择项目存放路径
 
-![图片4](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZnZvaS5wbmc?x-oss-process=image/format,png)
+![图片4](https://cdn.kefaming.com/2020/03/24/fvoi.png)
 
 Next–>Finish完成项目创建
 
@@ -47,7 +48,7 @@ Next–>Finish完成项目创建
 
 在项目目录下(这里是mybatis)添加controller、service、dao、entity包，在resources下添加mapper包存放映射文件。
 
-![图片5](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZk12TC5wbmc?x-oss-process=image/format,png)
+![图片5](https://cdn.kefaming.com/2020/03/24/fMvL.png)
 
 #### 4. application.yml配置
 
@@ -170,12 +171,11 @@ mybatis:
 
 选择Edit Configuration… 点击加号"+"添加，选择maven，填写名称(这里用mybatis generator)，命令行：mybatis-generator:generate -e
 
-![图片6](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZk4xai5wbmc?x-oss-process=image/format,png)
+![图片6](https://cdn.kefaming.com/2020/03/24/fN1j.png)
 
 
 #### 7.启动
 
 选择 Mybatis Generator 启动，自动在dao、entity、mapper包下生成代码
 
-![图片7](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ua2VmYW1pbmcuY29tLzIwMjAvMDMvMjQvZlJQSi5wbmc?x-oss-process=image/format,png)
-
+![图片7](https://cdn.kefaming.com/2020/03/24/fRPJ.png)
